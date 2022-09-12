@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.edson.personalfinance.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.edson.personalfinance.ui.depense.DepenseFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_depense" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.edson.personalfinance.ui.revenu.RevenuFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_revenu" />
+
+    <fragment
+        android:id="@+id/nav_solde"
+        android:name="com.edson.personalfinance.ui.solde.SoldeFragment"
+        android:label="@string/menu_solde"
+        tools:layout="@layout/fragment_solde"/>
+
+    <fragment
+        android:id="@+id/nav_cashFlow"
+        android:name="com.edson.personalfinance.ui.cashflow.CashFlowFragment"
+        android:label="@string/menu_cashflow"
+        tools:layout="@layout/fragment_cashflow"/>
+    <fragment
+        android:id="@+id/nav_convertisseur"
+        android:name="com.edson.personalfinance.ui.convertisseur.ConvertisseurFragment"
+        android:label="@string/menu_convertisseur"
+        tools:layout="@layout/fragment_convertisseur"
+        />
+
+</navigation>
